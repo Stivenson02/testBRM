@@ -40,8 +40,8 @@
                         {{ csrf_field() }}
                          {{ method_field('DELETE')}}
                     <button class="btn-danger" type="submit"> 
-                      Eliminar marca<
-                    /button>
+                      Eliminar marca
+                    </button>
                   </form>
                   </a>
              </div>                  

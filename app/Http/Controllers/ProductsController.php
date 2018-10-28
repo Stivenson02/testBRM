@@ -7,7 +7,6 @@ use App\product;
 use App\mark;
 use App\embargo;
 use App\products_by_marks;
-use App\inventory;
 use Illuminate\Support\Facades\Storage;
 
 class ProductsController extends Controller
@@ -86,7 +85,6 @@ class ProductsController extends Controller
 
       public function  deleteProduct($id_product)
    {
-      $the_inventory=inventory::where('product_id',$id_product)->delete();
       $the_marks=products_by_marks::where('product_id',$id_product)->delete();
       $the_product=product::find($id_product)->delete();
 

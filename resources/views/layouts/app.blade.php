@@ -44,7 +44,6 @@
                             <li><a href="{{ route('products_phat') }}">Productos</a></li>
                             <li><a href="{{ route('marks_phat') }}">Marcas</a></li>
                             <li><a href="{{ route('embargos_phat') }}">Embargues</a></li>
-                            <li><a href="{{ route('inventaries_phat') }}">Inventario</a></li>
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>

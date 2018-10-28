@@ -63,7 +63,7 @@
             <div class="panel-body">
                  @if($selec == 0)
                  El producto tiene ordenes de embargos
-                   <form class="form-horizontal" method="POST" action="{{ route('delete_embargo_phat',$detail_product->model_product->id) }}">
+                   <form class="form-horizontal" method="POST" action="{{ route('delete_embargo_product_phat',$detail_product->model_product->id) }}">
                         {{ csrf_field() }}
                          {{ method_field('DELETE')}}
                     <button class="btn-warning" type="submit"> 
